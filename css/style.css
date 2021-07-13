@@ -104,6 +104,38 @@ header {
 }
 
 /* ======= Footer Section ======= */
+.footer-wrap {
+  width: 483px;
+  margin: 140px auto 70px auto;
+  text-align: center;
+}
+.social {
+  margin-bottom: 20px;
+}
+.social span {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e7e7e8;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.social span:nth-child(4) {
+  margin-right: 0;
+}
+
+.social span i {
+  font-size: 17px;
+  padding-top: 8.5px;
+  color: #969bab;
+}
+
+.footer-wrap p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
 
 /* ======= Media Queries ======= */
 
@@ -146,5 +178,10 @@ header {
 
   .player {
     margin: 0 15px;
+  }
+
+  .footer-wrap {
+    width: 236px;
+    margin: 50px auto;
   }
 }

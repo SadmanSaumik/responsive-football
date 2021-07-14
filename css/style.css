@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
-/* ======= Common Css ======= */
+/* ======= Common CSS ======= */
 body {
   font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-size: 32px;
 }
 img {
   width: 100%;
@@ -70,7 +74,51 @@ header {
   margin-left: 102px;
 }
 
-.header-right img {
+/* ======= Latest Match Result Section ======= */
+
+.latest-match {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.latest-match-result {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.team img {
+  width: 150px;
+  height: 150px;
+}
+
+.team h3 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.latest-result {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.score h3 {
+  font-size: 52px;
+}
+
+.score-seperator hr {
+  width: 40px;
+  height: 5px;
+  background: #000000;
 }
 
 /* ======= Players Section ======= */
@@ -167,7 +215,37 @@ header {
     margin-top: 50px;
     padding: 0 15px;
   }
+  /* ======= Latest Match Section ======= */
+  .latest-match {
+    width: 100%;
+    margin-top: 47px;
+  }
 
+  .latest-match-result {
+    grid-column-gap: 5px;
+    padding: 20px;
+    margin: 15px;
+  }
+
+  .team img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .team h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .score h3 {
+    font-size: 32px;
+  }
+
+  .score-seperator hr {
+    width: 20px;
+    height: 5px;
+    background: #000000;
+  }
   /* ======= Players Section ======= */
   .players {
     width: 100%;

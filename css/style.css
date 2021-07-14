@@ -25,6 +25,10 @@ button {
   border: none;
 }
 
+legend {
+  margin: 0 auto;
+}
+
 /* ======= Header Section ======= */
 
 header {
@@ -150,6 +154,52 @@ header {
   line-height: 26px;
   color: #6c6c6c;
 }
+/* ======= Upcoming Match Section ======= */
+
+.upcoming-matches-wrap {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.upcoming-matches-wrap fieldset {
+  padding: 30px;
+  border: 10px solid #2d25a0;
+}
+.upcoming-matches-wrap fieldset h2 {
+  margin: 0 20px;
+}
+
+.upcoming-match-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin: 30px 0;
+}
+
+.match {
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  text-align: center;
+}
+
+.match-teams {
+  display: flex;
+  justify-content: center;
+}
+
+.match-team {
+  margin: 30px 20px;
+}
+
+.match-team img {
+  width: 50px;
+  height: 50px;
+}
+
+.match-team h4 {
+  font-size: 12px;
+}
 
 /* ======= Footer Section ======= */
 .footer-wrap {
@@ -261,5 +311,28 @@ header {
   .footer-wrap {
     width: 236px;
     margin: 50px auto;
+  }
+  /* ======= Upcoming Match Section ======= */
+
+  .upcoming-matches-wrap {
+    width: 100%;
+  }
+  .upcoming-match-list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  .upcoming-matches-wrap fieldset {
+    padding: 20px;
+    margin: 0 15px;
+    border: 5px solid #2d25a0;
+    text-align: center;
+  }
+  .upcoming-matches-wrap fieldset h2 {
+    margin: 0 3px;
+  }
+
+  .upcoming-matches {
+    margin: 50px 0;
   }
 }

@@ -55,12 +55,30 @@ header {
   font-size: 64px;
   line-height: 80px;
   color: #ffffff;
+  animation: header 1s ease-in-out;
+}
+
+@keyframes header {
+  0% {
+    transform: translateY(-200px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .header-left button {
   padding: 10px 24px;
   margin-top: 27px;
   background: #e02c6d;
+  border: 1px solid #e02c6d;
+  transition: all 0.5s;
+}
+
+.header-left button:hover {
+  background: transparent;
+  border: 1px solid white;
 }
 
 .header-left button a {
@@ -76,6 +94,14 @@ header {
 .header-right {
   width: 556px;
   margin-left: 102px;
+}
+
+.header-right-img {
+  transition: transform 1s;
+}
+
+.header-right-img:hover {
+  transform: scale(1.1);
 }
 
 /* ======= Latest Match Result Section ======= */
